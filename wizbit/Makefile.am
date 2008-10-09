@@ -12,7 +12,7 @@ INCLUDE_API =
 METADATA = metadata
 references =
 
-sources = sources.xml
+sources =
 
 customs =
 
