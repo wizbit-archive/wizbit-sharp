@@ -41,15 +41,15 @@ generated-stamp: $(API) $(GAPI_CODEGEN) $(build_customs)
 	--outdir=generated --customdir=$(srcdir) --assembly-name=$(ASSEMBLY_NAME)	\
 	&& touch generated-stamp
 
-AssemblyInfo.cs: $(top_builddir)/bindings/dotnet/AssemblyInfo.cs
-	cp $(top_builddir)/bindings/dotnet/AssemblyInfo.cs .
+AssemblyInfo.cs: $(top_builddir)/AssemblyInfo.cs
+	cp $(top_builddir)/AssemblyInfo.cs .
 
 build_sources = $(addprefix $(srcdir)/, $(sources)) AssemblyInfo.cs
 build_references = $(addprefix /r:, $(references)) $(GTK_SHARP_LIBS)
 
 $(ASSEMBLY): generated-stamp $(build_sources) $(references)
 	@rm -f $(ASSEMBLY).mdb
-	if ! test -f ./$(SNK); then cp $(top_srcdir)/bindings/dotnet/$(SNK) .; fi
+	if ! test -f ./$(SNK); then cp $(top_srcdir)/$(SNK) .; fi
 	$(CSC) $(CSFLAGS) -nowarn:0169,0612,0618 -unsafe -out:$(ASSEMBLY) -target:library $(build_references) generated/*.cs $(build_sources)
 	rm -rf ./$(SNK)
 
