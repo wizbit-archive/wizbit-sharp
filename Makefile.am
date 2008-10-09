@@ -1,7 +1,7 @@
 SUBDIRS = sources wizbit 
 
 EXTRA_DIST = 			\
-	gtk-sharp.snk		\
+	wizbit.snk		\
 	gapi-cdecl-insert	\
 	policy.config.in	\
 	AssemblyInfo.cs.in	\

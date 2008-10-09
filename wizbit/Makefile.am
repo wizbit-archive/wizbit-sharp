@@ -7,13 +7,12 @@ pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = wizbit-sharp.pc
 pkgversion = 0.0.1
 
+SNK = wizbit.snk
 API_VERSION = 0.0.1.0
 INCLUDE_API =
 METADATA = metadata
 references =
-
 sources =
-
 customs =
 
 add_dist = wizbit-sharp.pc.in wizbit-sharp.dll.config.in
