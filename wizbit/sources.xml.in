@@ -1,0 +1,14 @@
+<gapi-parser-input>
+  <api filename="@top_builddir@/wizbit/wizbit-api.raw">
+    <library name="libwizbit.dll">
+      <namespace name="Wiz">
+        <directory path="@includedir@/wizbit-1.0/wizbit">
+	  <exclude>reader.h</exclude>
+	  <exclude>reader.c</exclude>
+	  <exclude>writer.c</exclude>
+	  <exclude>writer.h</exclude>
+	</directory>
+      </namespace>
+    </library>
+  </api>
+</gapi-parser-input>

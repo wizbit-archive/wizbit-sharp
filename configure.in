@@ -160,6 +160,7 @@ AC_OUTPUT([
 Makefile
 sources/Makefile
 wizbit/Makefile
+wizbit/sources.xml
 wizbit/wizbit-sharp.dll.config
 wizbit/wizbit-sharp.pc
 ])
