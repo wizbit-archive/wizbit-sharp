@@ -3,19 +3,18 @@ DISTCLEANFILES =
 EXTRA_DIST = 
 
 pkg = wizbit
-pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = wizbit-sharp.pc
 pkgversion = 0.0.1
 
+pkgconfigdir = $(libdir)/pkgconfig
+pkgconfig_DATA = wizbit-sharp.pc
+add_dist = wizbit-sharp.pc.in wizbit-sharp.dll.config.in
+
 SNK = wizbit.snk
-API_VERSION = 0.0.1.0
 INCLUDE_API =
-METADATA = metadata
+METADATA = wizbit.metadata
 references =
 sources =
 customs =
 
-add_dist = wizbit-sharp.pc.in wizbit-sharp.dll.config.in
-
-include ../Makefile.include
+include $(top_srcdir)/Makefile.include
 
