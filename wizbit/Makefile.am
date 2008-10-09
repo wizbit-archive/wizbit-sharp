@@ -1,3 +1,7 @@
+
+DISTCLEANFILES = 
+EXTRADIST = 
+
 pkg = wizbit
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = wizbit-sharp.pc
