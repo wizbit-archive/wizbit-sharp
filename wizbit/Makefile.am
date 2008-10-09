@@ -13,7 +13,7 @@ SNK = wizbit.snk
 INCLUDE_API =
 INCLUDE_EXTRA = $(GTKSHARP_CFLAGS) $(GLIBSHARP_CFLAGS)
 METADATA = wizbit.metadata
-references = $(GLIBSHARP_LIBS)
+references =
 sources =
 customs =
 
