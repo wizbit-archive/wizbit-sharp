@@ -45,7 +45,7 @@ AssemblyInfo.cs: $(top_builddir)/AssemblyInfo.cs
 	cp $(top_builddir)/AssemblyInfo.cs .
 
 build_sources = $(addprefix $(srcdir)/, $(sources)) AssemblyInfo.cs
-build_references = $(addprefix /r:, $(references)) $(GTKSHARP_LIBS)
+build_references = $(addprefix /r:, $(references)) $(GTK_SHARP_LIBS)
 
 $(ASSEMBLY): generated-stamp $(build_sources) $(references)
 	@rm -f $(ASSEMBLY).mdb
