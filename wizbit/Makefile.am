@@ -14,5 +14,9 @@ customs =
 
 add_dist = wizbit-sharp.pc.in wizbit-sharp.dll.config.in
 
+wizbit-api.raw:
+	$(GAPI_PARSER) sources.xml
+
+
 include ../Makefile.include
 
