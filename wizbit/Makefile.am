@@ -1,6 +1,6 @@
 
 DISTCLEANFILES = 
-EXTRADIST = 
+EXTRA_DIST = 
 
 pkg = wizbit
 pkgconfigdir = $(libdir)/pkgconfig
