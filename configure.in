@@ -157,6 +157,7 @@ AC_SUBST(CFLAGS)
 AC_SUBST(LIBS)
 
 AC_OUTPUT([
+AssemblyInfo.cs
 Makefile
 sources/Makefile
 wizbit/Makefile
