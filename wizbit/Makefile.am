@@ -11,7 +11,7 @@ add_dist = wizbit-sharp.pc.in wizbit-sharp.dll.config.in
 
 SNK = wizbit.snk
 INCLUDE_API =
-INCLUDE_EXTRA = $(GTKSHARP_CFLAGS)
+INCLUDE_EXTRA = $(GTKSHARP_CFLAGS) $(GLIBSHARP_CFLAGS)
 METADATA = wizbit.metadata
 references =
 sources =
