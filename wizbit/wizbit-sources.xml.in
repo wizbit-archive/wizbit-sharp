@@ -7,6 +7,7 @@
 	  <exclude>reader.c</exclude>
 	  <exclude>writer.c</exclude>
 	  <exclude>writer.h</exclude>
+	  <exclude>commit_store.h</exclude>
 	</directory>
       </namespace>
     </library>
